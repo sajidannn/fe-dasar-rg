@@ -1,0 +1,113 @@
+body {
+  background-color: #dce3f3;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#profile {
+  flex-basis: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#profile img {
+  width: 35px;
+  border-radius: 15px;
+}
+
+main {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+#form-student {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  gap: 2px;
+  margin-bottom: 20px;
+}
+
+#form-student label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#form-student input[type="text"],
+#form-student input[type="date"],
+#form-student select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+#form-student input[type="text"]:focus,
+#form-student input[type="date"]:focus,
+#form-student select:focus {
+  border: 1px solid #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+#form-student select {
+  appearance: none; 
+  background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23666" d="M2 0L0 2h4z"/></svg>') no-repeat right 10px center;
+  background-size: 10px;
+  cursor: pointer;
+}
+
+#add-btn {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#add-btn:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.delete-btn {
+  background-color: #ff4c4c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #e03a3a;
+}
